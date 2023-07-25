@@ -1,0 +1,162 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.top-container {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    margin: 0 250px;
+    align-items: center;
+}
+
+.header-logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: none;
+    gap: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.header-main-text {
+    font-weight: bold;
+    font-size: 48px;
+    color: #f9faf8;
+}
+
+.header-content {
+    display: flex;
+    margin: 75px 250px;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 16px;
+}
+
+.header-img {
+    background-color: #4d5a6d;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.header-sign-up,
+.call-sign-up {
+    background-color: #3882f6;
+    color: #e5e7eb;
+    border-radius: 5px;
+    padding: 6px 24px;
+    border: none;
+    font-weight: bold;
+    width: 100px;
+}
+
+.middle-container {
+    margin: 0px 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    border: solid 3px #3882f6;
+    margin: 5px 0;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-text {
+    font-weight: bold;
+    font-size: 36px;
+    color: #1f2937;
+    margin: 32px 0;
+}
+
+.block-quote {
+    background-color: #e5e7eb;
+    padding: 100px 300px;
+    font-weight: 200;
+    font-size: 36px;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+}
+
+.thor {
+    text-align: right;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.call {
+    background-color: #3882f6;
+    border-radius: 10px;
+    color: #e5e7eb;
+    margin: 75px 250px;
+    display: flex;
+    padding: 40px 80px;
+    justify-content: space-between;
+}
+
+.call-sign-up {
+    border: 2px solid #e5e7eb;
+    flex-shrink: 0;
+}
+
+.call-title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    padding: 24px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
