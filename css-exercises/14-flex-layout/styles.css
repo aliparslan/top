@@ -1,13 +1,62 @@
-.flex-container {
-    display: flex;
-    background: skyblue;
-    flex-direction: column;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.flex-container div {
-    background: peachpuff;
-    border: 4px solid brown;
-    height: 100px;
-    flex: 1 1 auto;
-    margin: 8px;
+img {
+  width: 600px;
+}
+
+button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+  padding: 8px 16px;
+}
+
+input {
+  border: 2px solid #ddd;
+  border-radius: 16px;
+  padding: 8px 24px;
+  width: 400px;
+  margin-bottom: 16px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    /* had everything besides list-style-type on .left-links, .right-links before */
+}
+
+a {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+.header,
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+   background-color: lightgray;
 }
