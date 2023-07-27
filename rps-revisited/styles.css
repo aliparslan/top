@@ -3,10 +3,28 @@
     text-align: center;
 }
 
-.container {
+img {
+    widtH: 250px;
+    height: auto;
+}
+
+.rudy {
+    width: 500px;
+    height: auto;
+}
+
+#wins {
     display: flex;
     justify-content: center;
     gap: 16px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 16px;
 }
 
 button {
