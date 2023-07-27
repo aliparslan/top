@@ -1,0 +1,14 @@
+* {
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+button {
+    padding: 12px 24px;
+}
