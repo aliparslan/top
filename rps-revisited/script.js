@@ -90,12 +90,12 @@ rock.addEventListener('click',  function() {
     playRound('rock', getComputerChoice());
 });
 
-rock = document.querySelector('#paper');
-rock.addEventListener('click',  function() {
+paper = document.querySelector('#paper');
+paper.addEventListener('click',  function() {
     playRound('paper', getComputerChoice());
 });
 
-rock = document.querySelector('#scissors');
-rock.addEventListener('click',  function() {
+scissors = document.querySelector('#scissors');
+scissors.addEventListener('click',  function() {
     playRound('scissors', getComputerChoice());
 });

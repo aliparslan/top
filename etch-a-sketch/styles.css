@@ -1,0 +1,37 @@
+* {
+    font-family: 'Comic Sans MS', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin: 16px 0px;
+}
+
+.container {
+    margin: 0 auto; /* to center */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    width: 850px;
+    justify-content: center;
+    /* border: 1px solid black; */
+    gap: 1px;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 1;
+    /* border: 1px solid black; */
+    background-color: gray;
+}
+
+button {
+    padding: 8px 24px;
+    margin: 16px;
+    margin-top: 0px;
+}
+
+.hovering {
+    background-color: black;
+}
