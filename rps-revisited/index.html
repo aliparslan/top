@@ -4,21 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rock paper scissors revisited</title>
+    <title>rps revisited</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>rock paper scissors</h1>
-    <div class="container">
+    <h1 class="remove">play against rudy!</h1>
+    <img class="remove" src="rudy.jpg" alt="rudy">
+    <p class="remove">
+        Play against your boss, Rudy! If you win, you get promoted. 
+        <br> Lose, and you get fired. First to 10 wins!
+    </p>
+
+    <div class="remove" id="wins">
+        <p id="player-wins">Your wins: 0</p>
+        <p id="rudy-wins">Rudy's wins: 0</p>
+    </div>
+
+    <div class="remove buttons">
         <button id="rock">rock</button>
         <button id="paper">paper</button>
         <button id="scissors">scissors</button>
     </div>
-    <div class="results">
+    
+    <div class="remove" id="results">
         <!-- this is where the results will be populated with js -->
     </div>
 
+    <div class="game-over">
+        <!-- stuff that will show for game over -->
+    </div>
 </body>
 
 <script src="script.js"></script>
