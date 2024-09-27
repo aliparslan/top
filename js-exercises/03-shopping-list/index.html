@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+      li { margin-bottom: 10px; }
+
+      li button {
+        font-size: 12px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item">
+      <button id="btn">Add item</button>
+    </div>
+
+    <ul id="shoppingList">
+
+    </ul>
+
+    <script>
+        const shoppingList = document.getElementById('shoppingList');
+        const btn = document.getElementById('btn');
+        const input = document.getElementById('item');
+
+        function btnClick() {
+            item = input.value; // store input field
+            input.value = ''; // clear input field
+
+            const li = document.createElement('li');
+            const span = document.createElement('span');
+            const deleteBtn = document.createElement('button');
+
+            li.appendChild(span);
+            li.append(deleteBtn);
+            span.textContent = item;
+            deleteBtn.textContent = 'Delete';
+
+            shoppingList.appendChild(li); // adding new item to the list
+
+            // delete whole bullet when clicked
+            deleteBtn.addEventListener("click", () => {
+                deleteBtn.parentElement.remove();
+            });
+
+        }
+
+        btn.addEventListener("click", btnClick);
+        btn.addEventListener("click", () => {
+            document.getElementById('item').focus(); // make it go back to input after clicking
+        });
+
+    </script>
+  </body>
+</html>
